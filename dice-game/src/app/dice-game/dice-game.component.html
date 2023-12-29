@@ -1,0 +1,8 @@
+
+    <div class="dice-container">
+        <div class="dice" *ngIf="dice1">{{ dice1 }}</div>
+        <div class="dice" *ngIf="dice2">{{ dice2 }}</div>
+      </div>
+      <button type="button" (click)="rollDice()">Roll Dice</button>
+      <p>Total: {{ total }}</p>
+      

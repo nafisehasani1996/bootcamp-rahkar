@@ -1,0 +1,14 @@
+<p>todo app</p>
+<form >
+  <input type="text"(input)="getname($event)">
+  <button type="button"(click)="onhanking()">done</button>
+</form>
+<UL>
+  <li *ngFor="let item of bodyli ; let i=index ">
+    <p [ngClass]="{'color':selectedid ==i}">{{item}}</p>
+    <form><button type="button" (click)="ondone(i)">done</button>
+        <button type="button"(click)="onpak(i)">pake</button>
+    </form>
+ 
+  </li>
+</UL>
